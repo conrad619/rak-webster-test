@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-blue{
+        @apply bg-blue-600 px-3 py-2 rounded-md text-white mx-2 hover:bg-blue-500 font-semibold;
+    }
+}
+
+@layer components {
+    @variants dark {
+        .btn-blue {
+            @apply dark:border-white dark:border-2 dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:text-white dark:hover:border-white;
+        }
+    }
+}
+
+.inner-shadow-light{
+    box-shadow: inset 0 0 6px #fff;
+}
