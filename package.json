@@ -19,6 +19,8 @@
     },
     "dependencies": {
         "animejs": "^3.2.1",
-        "jquery": "^3.6.0"
+        "jquery": "^3.6.0",
+        "markdown-it": "^12.2.0",
+        "markdown-it-named-code-blocks": "^0.1.0"
     }
 }
