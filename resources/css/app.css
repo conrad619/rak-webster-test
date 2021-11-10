@@ -2,13 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .btn-blue{
-        @apply bg-blue-600 px-3 py-2 rounded-md text-white mx-2 hover:bg-blue-500 font-semibold;
-    }
+@layer base{
 }
 
 @layer components {
+    .btn{
+        @apply bg-gradient-to-r from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 text-white rounded-full tracking-wide  hover:shadow-inner-light hover:from-blue-600 hover:to-blue-600 active:opacity-50 focus:shadow-glow focus:ring-blue-600 focus:ring-2 outline-none;
+    }
+    .btn-disabled{
+        @apply bg-gradient-to-r from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 py-2 px-12 text-white rounded-full tracking-wide disabled:from-neutral-700 disabled:to-neutral-700 disabled:opacity-50;
+    }
+    .btn-lg{
+        @apply text-c3 py-2 px-12;
+    }
+    .btn-md{
+        @apply text-h6 py-2 px-6;
+    }
+    .btn-sm{
+        @apply text-base py-1 px-4;
+    }
+    .link{
+        @apply hover:underline leading-5 visited:text-primary-500 focus:ring-blue-600 focus:ring-4 focus:ring-opacity-50 focus:border-opacity-50 outline-none active:bg-blue-600 active:bg-opacity-50 box-border tracking-wide;
+        text-underline-offset:2px;
+    }
+    hr{
+        @apply bg-gradient-to-r from-[#FFFFFF00] via-[#FFFFFF80] to-[#FFFFFF00] border-0 h-0.5 my-4;
+    }
+}
+
+@layer utilities {
     @variants dark {
         .btn-blue {
             @apply dark:border-white dark:border-2 dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:text-white dark:hover:border-white;
@@ -18,4 +40,9 @@
 
 .inner-shadow-light{
     box-shadow: inset 0 0 6px #fff;
+}
+
+code{
+    background:#2b2b2b;
+    @apply p-4 rounded-md block min-w-max;
 }

@@ -21,7 +21,7 @@ mix.js('resources/js/app.js', 'public/js')
     ])
     .combine([
         'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/animejs/lib/anime.min.js'
+        'node_modules/animejs/lib/anime.min.js',
     ], 'public/js/vendor.js');
 
 mix.version();

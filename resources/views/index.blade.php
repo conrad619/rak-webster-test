@@ -3,27 +3,30 @@
 @section('content')
     <div class="flex z-10 relative">
         <div>
-                <button class="bg-gradient-to-r from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 py-2 px-12 text-white rounded-full text-c3 tracking-wide  hover:shadow-inner-light hover:from-blue-600 hover:to-blue-600 active:opacity-50 focus:shadow-glow focus:ring-blue-600 focus:ring-2 outline-none trigger-1" >
-                    Learn More
-                </button>
+            <button class="btn btn-lg trigger-1" >
+                Learn More
+            </button>
         </div>
         <div>
-                <button class="bg-gradient-to-r from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 py-2 px-12 text-white rounded-full text-c3 tracking-wide  hover:shadow-inner-light hover:from-blue-600 hover:to-blue-600 active:opacity-50 focus:shadow-glow focus:ring-blue-600 focus:ring-2 outline-none trigger-2" >
-                    Learn More
-                </button>
+            <button class="btn btn-md trigger-2" >
+                Learn More
+            </button>
         </div>
         <div>
-                <button class="bg-gradient-to-r from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 py-2 px-12 text-white rounded-full text-c3 tracking-wide  hover:shadow-inner-light hover:from-blue-600 hover:to-blue-600 active:opacity-50 focus:shadow-glow focus:ring-blue-600 focus:ring-2 outline-none trigger-3" >
-                    Learn More
-                </button>
+            <button class="btn btn-sm trigger-3" >
+                Learn More
+            </button>
         </div>
+        
     </div>
     <div class="flex">
         <div class="bg-gradient-to-r from-black to-neutral-700 w-36 h-36 img img-1"></div>
         <div class="bg-gradient-to-r from-neutral-900 to-neutral-700 w-36 h-36 img img-2"></div>
         <div class="bg-gradient-to-r from-neutral-50 to-white w-36 h-36 img img-3"></div>
     </div>
-    <hr class="bg-gradient-to-r from-[#FFFFFF00] via-[#FFFFFF80] to-[#FFFFFF00] border-0 h-0.5 my-4">
+    <hr>
+    <hr>
+    <hr>
     <div class="flex">
         <div class="bg-neutral-50 rounded-full w-24 h-24"></div>
         <div class="bg-neutral-100 rounded-full w-24 h-24"></div>
@@ -60,7 +63,7 @@
         <div class="bg-blue-300 rounded-full w-24 h-24"></div>
         <div class="bg-gradient-to-b from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 w-36 h-36"></div>
     </div>
-    <div class="text-d1">text-d1 56px </div>
+    <div class="text-d1 ">text-d1 56px </div>
     <div class="text-h1">text-h1 36px </div>
     <div class="text-h2">text-h2 34px </div>
     <div class="text-h3">text-h3 28px </div>
@@ -70,59 +73,59 @@
     <div class="text-c1">text-c1 28px </div>
     <div class="text-c2">text-c2 24px </div>
     <div class="text-c3">text-c3 22px </div>
-    <div class="grid grid-cols-3 gap-4">
         {{-- hover --}}
-        <div>
-            <a href="#">
-                <button class="bg-gradient-to-r from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 py-2 px-12 text-white rounded-full text-c3 tracking-wide  hover:shadow-inner-light hover:from-blue-600 hover:to-blue-600 active:opacity-50 focus:shadow-glow focus:ring-blue-600 focus:ring-2 outline-none" >
-                    Learn More
-                </button>
-            </a>
-        </div>
-        <div>
-            <button class="bg-gradient-to-r from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 py-2 px-6 text-white rounded-full text-h6 tracking-wide hover:shadow-inner-light hover:from-blue-600 hover:to-blue-600 active:opacity-50 focus:shadow-glow focus:ring-blue-600 focus:ring-2 outline-none">
-                Find More
-            </button>
-        </div>    
-        <div>
-            <button class="bg-gradient-to-r from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 py-1 px-4 text-white rounded-full text-base tracking-wide hover:shadow-inner-light hover:from-blue-600 hover:to-blue-600 active:opacity-50 focus:shadow-glow focus:ring-blue-600 focus:ring-2 outline-none">
-                Button
-            </button>
-        </div>
-        {{-- disabled --}}
-        <div>
-            <button class="mt-50px bg-gradient-to-r from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 py-2 px-12 text-white rounded-full text-c3 tracking-wide disabled:from-neutral-700 disabled:to-neutral-700 disabled:opacity-50 " disabled>
-                Learn More
-            </button>
-        </div>
-        <div>
-            <button class="bg-gradient-to-r from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 py-2 px-6 text-white rounded-full text-h6 tracking-wide disabled:from-neutral-700 disabled:to-neutral-700 disabled:opacity-50 " disabled>
-                Find More
-            </button>
-        </div>    
-        <div>
-            <button class="bg-gradient-to-r from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 py-1 px-4 text-white rounded-full text-base tracking-wide disabled:from-neutral-700 disabled:to-neutral-700 disabled:opacity-50 " disabled>
-                Button
-            </button>
-        </div>
-        
-    </div>
+<pre><code data-code='<button class="btn btn-lg">Learn More</button> 
+<button class="btn btn-md">Learn More</button> 
+<button class="btn btn-sm">Learn More</button> 
+'></code></pre>
+    <a href="#">
+        <button class="btn btn-lg" >
+            Learn More
+        </button>
+    </a>
+    <button class="btn btn-md">
+        Find More
+    </button>
+    <button class="btn btn-sm">
+        Button
+    </button>
+<pre><code data-code='<button class="btn-disabled btn-lg">Learn More</button> 
+<button class="btn-disabled btn-md">Learn More</button> 
+<button class="btn-disabled btn-sm">Learn More</button> 
+'></code></pre>
+    {{-- disabled --}}
+    <button class="btn-disabled btn-lg" disabled>
+        Learn More
+    </button>
+    <button class="btn-disabled btn-md" disabled>
+        Find More
+    </button>
+    <button class="btn-disabled btn-sm" disabled>
+        Button
+    </button>
+<pre><code data-code='<a href="#" class="text-c3 link">
+    Link CTA<span class="inline-block align-middle -translate-y-0.5">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg></span>
+</a>
+'></code></pre>
     <div class="p-5">
-        <a href="#" class="text-c3 vertical-center hover:underline leading-5 visited:text-primary-500 focus:ring-blue-600 focus:ring-4 focus:ring-opacity-50 focus:border-opacity-50 outline-none active:bg-blue-600 active:bg-opacity-50 box-border tracking-wide" style="text-underline-offset:2px">
+        <a href="#" class="text-c3 link">
             Link CTA<span class="inline-block align-middle -translate-y-0.5">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
             </span></a>
-        <a href="#2" class="text-h6 vertical-center hover:underline leading-5 visited:text-primary-500 focus:ring-blue-600 focus:ring-4 focus:ring-opacity-50 focus:border-opacity-50 outline-none active:bg-blue-600 active:bg-opacity-50 box-border tracking-wide" style="text-underline-offset:2px">
+        <a href="#2" class="text-h6 link">
             Link CTA<span class="inline-block align-middle -translate-y-0.5">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
             </span></a>
-        <a href="#3" class="text-base vertical-center hover:underline leading-5 visited:text-primary-500 focus:ring-blue-600 focus:ring-4 focus:ring-opacity-50 focus:border-opacity-50 outline-none active:bg-blue-600 active:bg-opacity-50 box-border tracking-wide" style="text-underline-offset:2px">
+        <a href="#3" class="text-base link">
             Link CTA<span class="inline-block align-middle -translate-y-0.5">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
             </span></a>
