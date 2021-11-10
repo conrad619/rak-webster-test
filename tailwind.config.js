@@ -16,25 +16,25 @@ module.exports = {
       'md':'600px',
       'lg':'1100px'
     },
-    fontSize:{
-      'd1':'3.5rem',
-      'h1':'2.25rem',
-      'h2':'2.125rem',
-      'h3':'1.75rem',
-      'h4':'1.5rem',
-      'h5':'1.25rem',
-      'h6':'1.0625rem',
-      'c1':'1.75rem',
-      'c2':'1.5rem',
-      'c3':'1.375rem',
-      'c4':'1.25rem',
-      'c5':'1.125rem',
-    },
-    boxShadow:{
-      'inner-light': 'inset 0 0 6px #fff',
-      'glow': '0 0 16px #0081FE'
-    },
     extend: {
+      boxShadow:{
+        'inner-light': 'inset 0 0 6px #fff',
+        'glow': '0 0 16px #0081FE'
+      },
+      fontSize:{
+        'd1':'3.5rem',
+        'h1':'2.25rem',
+        'h2':'2.125rem',
+        'h3':'1.75rem',
+        'h4':'1.5rem',
+        'h5':'1.25rem',
+        'h6':'1.0625rem',
+        'c1':'1.75rem',
+        'c2':'1.5rem',
+        'c3':'1.375rem',
+        'c4':'1.25rem',
+        'c5':'1.125rem',
+      },
       colors:{
         black: '#121212',
         light: {
