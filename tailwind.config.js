@@ -8,7 +8,7 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontFamily:{
-      'sans':'Arial, Sans Serif',
+      'sans':'"Roboto", sans-serif',
       'body': 'Open Sans'
     },
     screens: {

@@ -3,7 +3,7 @@
 @section('content')
     <div class="flex z-10 relative">
         <div>
-            <button class="btn btn-lg trigger-1" >
+            <button class="btn btn-lg trigger-1 m-[10px] lg:m-[100px]" >
                 Learn More
             </button>
         </div>
@@ -28,7 +28,7 @@
     <hr>
     <hr>
     <div class="flex">
-        <div class="bg-neutral-50 rounded-full w-24 h-24"></div>
+        <div class="bg-neutral-50 lg:bg-red-500 rounded-full w-24 h-24"></div>
         <div class="bg-neutral-100 rounded-full w-24 h-24"></div>
         <div class="bg-neutral-200 rounded-full w-24 h-24"></div>
         <div class="bg-neutral-300 rounded-full w-24 h-24"></div>
@@ -109,6 +109,18 @@
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
     </svg></span>
 </a>
+<a href="#" class="text-h6 link">
+    Link CTA<span class="inline-block align-middle -translate-y-0.5">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg></span>
+</a>
+<a href="#" class="text-base link">
+    Link CTA<span class="inline-block align-middle -translate-y-0.5">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg></span>
+</a>
 '></code></pre>
     <div class="p-5">
         <a href="#" class="text-c3 link">
@@ -129,7 +141,6 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
             </span></a>
-       
     </div>
 
 

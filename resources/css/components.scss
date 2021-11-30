@@ -1,0 +1,20 @@
+
+.btn{
+    @apply bg-gradient-to-r from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 text-white rounded-full tracking-wide  hover:shadow-inner-light hover:from-blue-600 hover:to-blue-600 active:opacity-50 focus:shadow-glow focus:ring-blue-600 focus:ring-2 outline-none;
+}
+.btn-disabled{
+    @apply bg-gradient-to-r from-blue-grad-1 via-blue-grad-2 to-blue-grad-3 py-2 px-12 text-white rounded-full tracking-wide disabled:from-neutral-700 disabled:to-neutral-700 disabled:opacity-50;
+}
+.btn-lg{
+    @apply text-c3 py-2 px-12;
+}
+.btn-md{
+    @apply text-h6 py-2 px-6;
+}
+.btn-sm{
+    @apply text-base py-1 px-4;
+}
+.link{
+    @apply hover:underline leading-5 visited:text-primary-500 focus:ring-blue-600 focus:ring-4 focus:ring-opacity-50 focus:border-opacity-50 outline-none active:bg-blue-600 active:bg-opacity-50 box-border tracking-wide;
+    text-underline-offset:2px;
+}

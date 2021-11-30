@@ -1,0 +1,39 @@
+
+
+@import 'tailwindcss/base';
+@import './base';
+
+@import 'tailwindcss/components';
+@import './components';
+
+@import 'tailwindcss/utilities';
+@import './utilities';
+
+@import './shadow';
+
+
+
+code{
+    background:#2b2b2b;
+    @apply p-4 rounded-md block min-w-max;
+}
+
+@layer components{
+    hr{
+        @apply bg-gradient-to-r from-[#FFFFFF00] via-[#FFFFFF80] to-[#FFFFFF00] border-0 h-0.5 my-4;
+    }
+}
+
+.selected{
+    @extend .shadow-inset-blue;
+    > div{
+        @apply bg-blue-600 filter blur-sm opacity-40 brightness-100;
+    }
+}
+
+.unselected{
+    @extend .shadow-inset-gray;
+    > div{
+        @apply bg-black filter blur-sm opacity-[15%] brightness-[4];
+    }
+}
